@@ -30,8 +30,14 @@ h1.app-name {
     flex: 1 0 auto;
 }
 
-.mat-nav-list {
+.navList {
+    display: flex;
+    flex-direction: column;
     padding: 0px;
+    height: 100%;
+    .lastChild {
+        margin-top: auto;
+    }
     .navIcon {
         margin: 0 20px 0 0;
     }
