@@ -2,7 +2,7 @@
 
     <mat-toolbar class="toolbar">
         <div>
-            <button mat-icon-button (click)="snav.toggle()">
+            <button mat-icon-button color="accent" (click)="snav.toggle()">
                 <mat-icon>menu</mat-icon>
             </button>
         </div>
@@ -15,12 +15,12 @@
         <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'push'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
             <mat-nav-list class="navList">
 
-                <a mat-list-item routerLink=".">
+                <a mat-list-item routerLink="./">
                     <mat-icon class="navIcon">home</mat-icon>
                     <span>Home</span>
                 </a>
 
-                <a mat-list-item routerLink=".">
+                <a mat-list-item routerLink="./portfolio">
                     <mat-icon class="navIcon">web</mat-icon>
                     <span>Portfolio</span>
                 </a>
@@ -44,7 +44,7 @@
         </mat-sidenav>
 
         <mat-sidenav-content>
-            <p> Content </p>
+            <router-outlet></router-outlet>
         </mat-sidenav-content>
     </mat-sidenav-container>
 </div>
