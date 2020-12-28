@@ -9,10 +9,13 @@
         <div class="section-name-container">
             <h1 class="section-name">Home</h1>
         </div>
+        <div class="logo-container">
+            <img src="../../../../assets/images/logoOwn.png" class="logo">
+        </div>
     </mat-toolbar>
 
-    <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-        <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'push'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+    <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 32 : 0">
+        <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'push'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="32">
             <mat-nav-list class="navList">
 
                 <a mat-list-item routerLink="./">
