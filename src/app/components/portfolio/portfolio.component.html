@@ -1,1 +1,120 @@
-<p>portfolio works!</p>
+<mat-tab-group mat-align-tabs="center">
+
+    <mat-tab label="Angular">
+        <div class="gallery">
+            <div class="project">
+                <mat-card class="card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="header-image"></div>
+                        <mat-card-title>Ring of Fire</mat-card-title>
+                        <mat-card-subtitle>Best game for your parties!</mat-card-subtitle>
+                    </mat-card-header>
+                    <div class="background ringoffire">
+                        <button mat-raised-button color="basic">Play now!</button>
+                    </div>
+                </mat-card>
+                <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Read more.
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p>This game was built with Angular 11.</p>
+                        <p>Github: XXXXX</p>
+                    </mat-expansion-panel>
+                </mat-accordion>
+
+            </div>
+            <div class="project">
+                <mat-card class="card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="header-image"></div>
+                        <mat-card-title>My Website</mat-card-title>
+                        <mat-card-subtitle>A nice way to learn how to use Angular.</mat-card-subtitle>
+                    </mat-card-header>
+                    <div class="background myphoto">
+
+                    </div>
+                </mat-card>
+                <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Read more.
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p>The entire site was built with Angular Material.</p>
+                        <p>Such components as: Sidenav, Button, Card, Expansion Panel and Toolbar.</p>
+                        <p>Github: XXXXX</p>
+                    </mat-expansion-panel>
+                </mat-accordion>
+
+            </div>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="JavaScript">
+        <div class="gallery">
+            <div class="project">
+                <mat-card class="card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="header-image jsLogo"></div>
+                        <mat-card-title>Ell Pollo Loco</mat-card-title>
+                        <mat-card-subtitle>Have 10min fun with this game!</mat-card-subtitle>
+                    </mat-card-header>
+                    <div class="background elpolloloco">
+                        <button mat-raised-button color="basic">Play now!</button>
+                    </div>
+
+                </mat-card>
+                <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Read more.
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p>This game was built with Canvas.</p>
+                        <p>Github: XXXXX</p>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </div>
+
+            <div class="project">
+                <mat-card class="card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="header-image jsLogo"></div>
+                        <mat-card-title>Flappy Vogel</mat-card-title>
+                        <mat-card-subtitle>Almost as good as the original!</mat-card-subtitle>
+                    </mat-card-header>
+                    <div class="background flappyVogel">
+                        <button mat-raised-button color="basic">Play now!</button>
+                    </div>
+                </mat-card>
+                <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Read more.
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p>This game was built with JS OOP based.</p>
+                        <p>Github: XXXXX</p>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </div>
+        </div>
+
+    </mat-tab>
+
+
+    <mat-tab label="API">
+
+        content 3
+
+
+
+
+    </mat-tab>
+</mat-tab-group>

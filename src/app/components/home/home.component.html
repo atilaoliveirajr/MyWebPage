@@ -1,7 +1,7 @@
 <section class="front-page" id="front-page">
     <div class="front-end-block-container">
         <div class="front-end-block">
-            <p>Web-Frontend <br>Developer.</p>
+            <p *ngIf="showHeadline" class="headline fadeIn">{{headlines[currentHeadlines]}}</p>
         </div>
     </div>
 </section>

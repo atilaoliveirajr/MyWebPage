@@ -13,6 +13,7 @@
         color: white;
         font-family: 'Taviraj', serif;
         padding-left: 60px;
+        /* width: 60%; */
     }
     .front-end-block {
         display: flex;
@@ -22,10 +23,24 @@
         text-align: left;
         font-size: 70px;
         line-height: 90px;
+        .headline {
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+        .fadeIn {
+            animation: fadeInAnimation 1.2s ease-in-out;
+        }
     }
-    .front-end-block p {
-        font-weight: 600;
-        margin-bottom: 0px;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
     }
 }
 
