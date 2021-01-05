@@ -8,18 +8,22 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './components/home/home.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatCardModule} from '@angular/material/card';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { ResumeComponent } from './components/resume/resume.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
     HomeComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatButtonModule,
     MatTabsModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

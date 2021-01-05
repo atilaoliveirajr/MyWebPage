@@ -1,0 +1,134 @@
+.first-section {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    .presentation-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        width: 40%;
+        min-width: 360px;
+        box-sizing: border-box;
+        .presentation-text {
+            font-weight: lighter;
+            max-width: 300px;
+            word-wrap: break-word;
+            margin: 0;
+            text-align: center;
+            .bold_blue {
+                font-weight: 500;
+                color: #66FCF1;
+            }
+        }
+        .photo {
+            width: 300px;
+            margin: 20px;
+        }
+    }
+    .skills-section {
+        box-sizing: border-box;
+        margin: 10px;
+        width: 40%;
+        min-width: 360px;
+        .skill-bar-container {
+            box-sizing: border-box;
+            margin: 20px;
+            background-color: #c5c6c7;
+            max-width: 500px;
+            min-width: 290px;
+            height: 30px;
+            display: flex;
+            border: white solid 1px;
+            .skill-bar-progress {
+                display: flex;
+                align-items: center;
+                background-color: #66FCF1;
+                .skill-name {
+                    background: #45A29E;
+                    width: 100px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.second-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 70px;
+    .label-wrap {
+        box-sizing: border-box;
+        min-width: 230px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin: auto;
+        margin-top: 70px;
+    }
+    .label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0 1rem;
+        font-size: 1rem;
+        flex: 0 1 20%;
+        .hexagon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 125px;
+            .hexagon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 57.735px;
+                background: #66FCF1;
+                position: relative;
+                mat-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 55px;
+                }
+            }
+            .hexagon::before {
+                content: "";
+                position: absolute;
+                top: -28.8675px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 28.8675px solid #66FCF1;
+            }
+            .hexagon::after {
+                content: "";
+                position: absolute;
+                bottom: -28.8675px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 28.8675px solid #66FCF1;
+            }
+        }
+    }
+}
