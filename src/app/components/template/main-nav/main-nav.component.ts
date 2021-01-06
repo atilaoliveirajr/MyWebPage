@@ -10,6 +10,39 @@ import { HeaderService } from './header.service';
 export class MainNavComponent implements OnInit {
   mobileQuery: MediaQueryList;
 
+  navDataArray = [
+    {
+      'icon': 'home',
+      'page': 'Home',
+      'routerLink': "./",
+      'class': ""
+    },
+    {
+      'icon': 'web',
+      'page': 'Portfolio',
+      'routerLink': "./portfolio",
+      'class': ""
+    },
+    {
+      'icon': 'person_search',
+      'page': 'About me',
+      'routerLink': "./aboutme",
+      'class': "" 
+    },
+    {
+      'icon': 'person_add',
+      'page': 'Contact me',
+      'routerLink': ".",
+      'class': ""
+    },
+    {
+      'icon': 'picture_as_pdf',
+      'page': 'Resume',
+      'routerLink': ".",
+      'class': "lastChild"
+    }
+  ]
+
   private _mobileQueryListener: () => void;
   
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private headerService: HeaderService) {
