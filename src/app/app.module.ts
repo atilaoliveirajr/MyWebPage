@@ -14,7 +14,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { ResumeComponent } from './components/resume/resume.component';
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
 
 
 @NgModule({
@@ -23,7 +23,7 @@ import { ResumeComponent } from './components/resume/resume.component';
     MainNavComponent,
     HomeComponent,
     PortfolioComponent,
-    ResumeComponent
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,

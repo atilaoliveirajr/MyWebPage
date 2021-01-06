@@ -1,0 +1,35 @@
+<body>
+    <section class="first-section">
+
+        <div class="presentation-wrapper">
+            <img class="photo" src="../../../assets/images/0.jpg">
+            <p class="presentation-text">
+                "I was trained to <span class="bold_blue">solve problems and overcome challenges</span>, and I strongly enjoy it. As a <span class="bold_blue">Frontend-Developer</span> I can make people's life easier."
+            </p>
+        </div>
+
+        <div class="skills-section">
+            <div class="skill-bar-container" *ngFor="let skill of skillsArray">
+                <div class="skill-bar-progress" [style.width]="skill.level + '%'">
+                    <div class="skill-name">
+                        <span>{{skill.name}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="second-section">
+        <div class="label-wrap" *ngFor="let label of labelsArray">
+            <div class="label">
+                <div class="hexagon-container">
+                    <div class="hexagon">
+                        <mat-icon>{{label.icon}}</mat-icon>
+                    </div>
+                </div>
+                <h2>{{label.title}}</h2>
+                <p>{{label.description}}</p>
+            </div>
+        </div>
+    </section>
+</body>
