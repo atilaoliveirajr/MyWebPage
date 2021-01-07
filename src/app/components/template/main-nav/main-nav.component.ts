@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import {MediaMatcher} from '@angular/cdk/layout';
 import { HeaderService } from './header.service';
+import { InfoComponent } from '../../info/info.component'
 
 @Component({
   selector: 'main-nav',
@@ -10,38 +11,8 @@ import { HeaderService } from './header.service';
 export class MainNavComponent implements OnInit {
   mobileQuery: MediaQueryList;
 
-  navDataArray = [
-    {
-      'icon': 'home',
-      'page': 'Home',
-      'routerLink': "./",
-      'class': ""
-    },
-    {
-      'icon': 'web',
-      'page': 'Portfolio',
-      'routerLink': "./portfolio",
-      'class': ""
-    },
-    {
-      'icon': 'person_search',
-      'page': 'About me',
-      'routerLink': "./aboutme",
-      'class': "" 
-    },
-    {
-      'icon': 'person_add',
-      'page': 'Contact me',
-      'routerLink': ".",
-      'class': ""
-    },
-    {
-      'icon': 'picture_as_pdf',
-      'page': 'Resume',
-      'routerLink': ".",
-      'class': "lastChild"
-    }
-  ]
+  info = new InfoComponent;
+  navDataArray = this.info.navDataArray;
 
   private _mobileQueryListener: () => void;
   
@@ -52,7 +23,6 @@ export class MainNavComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
   }
 
   ngOnDestroy(): void {

@@ -15,6 +15,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { InfoComponent } from './components/info/info.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
     MainNavComponent,
     HomeComponent,
     PortfolioComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
