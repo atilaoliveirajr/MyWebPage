@@ -16,6 +16,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { InfoComponent } from './components/info/info.component';
+import { FooterComponent } from './components/template/footer/footer.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { InfoComponent } from './components/info/info.component';
     HomeComponent,
     PortfolioComponent,
     AboutmeComponent,
-    InfoComponent
+    InfoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { InfoComponent } from './components/info/info.component';
     MatTabsModule,
     MatCardModule,
     MatExpansionModule,
+    MatTooltipModule
     
   ],
   providers: [],

@@ -28,7 +28,7 @@ export class InfoComponent implements OnInit {
       'title': 'Finally, I followed my dream',
       'description': 'and quit my job to learn Front-End Development in a professional software development school.'
     }
-  ]
+    ]
 
   skillsArray = [
     {
@@ -62,7 +62,7 @@ export class InfoComponent implements OnInit {
     }
   ]
 
-  portfolioData = [{
+  portfolioArray = [{
     'title': 'Ring of Fire',
     'subtitle': 'Best game for your parties!',
     'backGroundImage': 'ringoffire',
@@ -103,40 +103,41 @@ export class InfoComponent implements OnInit {
     'angular': false,
     'javaScript': true
   }
-]
+  ]
 
-navDataArray = [
-  {
-    'icon': 'home',
-    'page': 'Home',
-    'routerLink': "./",
-    'class': ""
-  },
-  {
-    'icon': 'web',
-    'page': 'Portfolio',
-    'routerLink': "./portfolio",
-    'class': ""
-  },
-  {
-    'icon': 'person_search',
-    'page': 'About me',
-    'routerLink': "./aboutme",
-    'class': "" 
-  },
-  {
-    'icon': 'person_add',
-    'page': 'Contact me',
-    'routerLink': ".",
-    'class': ""
-  },
-  {
-    'icon': 'picture_as_pdf',
-    'page': 'Resume',
-    'routerLink': ".",
-    'class': "lastChild"
-  }
-]
+  navDataArray = [
+    {
+      'icon': 'home',
+      'page': 'Home',
+      'routerLink': "./",
+      'class': ""
+    },
+    {
+      'icon': 'web',
+      'page': 'Portfolio',
+      'routerLink': "./portfolio",
+      'class': ""
+    },
+    {
+      'icon': 'person_search',
+      'page': 'About me',
+      'routerLink': "./aboutme",
+      'class': "" 
+    },
+    {
+      'icon': 'person_add',
+      'page': 'Contact me',
+      'routerLink': ".",
+      'class': ""
+    },
+    {
+      'icon': 'picture_as_pdf',
+      'page': 'Resume',
+      'routerLink': ".",
+      'class': "lastChild"
+    }
+  
+  ]
 
   constructor() { }
 

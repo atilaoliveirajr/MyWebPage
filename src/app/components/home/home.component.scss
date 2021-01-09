@@ -1,9 +1,8 @@
 .front-page {
-    display: flex;
-    flex-direction: column;
     background-image: url('../../../assets/images/front-page.jpg');
     background-size: cover;
     background-position: center;
+    padding: 0px;
     width: 100%;
     height: 100%;
     .front-end-block-container {

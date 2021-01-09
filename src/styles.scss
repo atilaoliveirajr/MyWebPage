@@ -6,7 +6,11 @@ body {
 }
 
 body {
-    background: #4E4E50;
+    /* background: #4E4E50; */
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    .bold_blue {
+        font-weight: 500;
+        color: #66FCF1;
+    }
 }
