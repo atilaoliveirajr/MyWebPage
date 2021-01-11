@@ -49,16 +49,16 @@ export class InfoComponent implements OnInit {
     },
     {
       'name': 'Java',
-      'level': '40'
+      'level': '50'
     },
     {
       'name': 'Springboot',
-      'level': '40'
+      'level': '50'
     }
     ,
     {
       'name': 'MySQL',
-      'level': '30'
+      'level': '40'
     }
   ]
 
@@ -127,7 +127,7 @@ export class InfoComponent implements OnInit {
     {
       'icon': 'person_add',
       'page': 'Contact me',
-      'routerLink': ".",
+      'routerLink': "./imprint",
       'class': ""
     },
     {

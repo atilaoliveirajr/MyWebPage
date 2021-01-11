@@ -18,6 +18,8 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { InfoComponent } from './components/info/info.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { ImprintComponent } from './components/imprint/imprint.component';
+import { DataProtectionComponent } from './components/data-protection/data-protection.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     PortfolioComponent,
     AboutmeComponent,
     InfoComponent,
-    FooterComponent
+    FooterComponent,
+    ImprintComponent,
+    DataProtectionComponent
   ],
   imports: [
     BrowserModule,

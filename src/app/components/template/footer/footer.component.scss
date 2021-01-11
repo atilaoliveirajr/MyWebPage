@@ -1,5 +1,5 @@
 footer {
-    height: 300px;
+    height: 230px;
     padding-bottom: 20px;
     p {
         text-align: center;
@@ -21,24 +21,60 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        .socialMedia {
-            width: 40px;
-            padding: 30px;
-            filter: invert(1);
-            &:hover {
-                animation: shake 0.5s cubic-bezier(0.4, 0.08, 0.2, 1);
-                transform: translate3d(0, 0, 0);
-                backface-visibility: hidden;
-                perspective: 900px;
+        .touch-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            margin: 20px;
+            .socialMedia {
+                width: 40px;
+                margin: 30px;
+                padding: 0px;
+                filter: invert(1);
+                &:hover {
+                    animation: shake 0.5s cubic-bezier(0.4, 0.08, 0.2, 1);
+                    transform: translate3d(0, 0, 0);
+                    backface-visibility: hidden;
+                    perspective: 900px;
+                }
             }
         }
     }
-    .impressum {
-        width: 100%;
-        height: 60px;
+    .legal-requirements {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        p {
+            padding-bottom: 20px;
+            width: 100px;
+            a {
+                text-decoration: none;
+                position: relative;
+                transition: clip-path 275ms ease;
+                cursor: pointer;
+                &:hover span::before,
+                &:focus span::before {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                }
+                span {
+                    position: relative;
+                    display: inline-block;
+                    color: white;
+                    &::before {
+                        position: absolute;
+                        content: attr(data-content);
+                        color: #45A29E;
+                        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+                        transition: clip-path 275ms ease;
+                    }
+                }
+            }
+        }
     }
-    .impressum p {
-        text-align: center;
+    .CR {
+        padding-bottom: 20px;
     }
 }
 
