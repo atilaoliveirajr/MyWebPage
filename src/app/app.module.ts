@@ -15,7 +15,6 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
-import { InfoComponent } from './components/info/info.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { ImprintComponent } from './components/imprint/imprint.component';
@@ -29,7 +28,6 @@ import { DataProtectionComponent } from './components/data-protection/data-prote
     HomeComponent,
     PortfolioComponent,
     AboutmeComponent,
-    InfoComponent,
     FooterComponent,
     ImprintComponent,
     DataProtectionComponent

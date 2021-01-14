@@ -11,7 +11,11 @@
                             <mat-card-subtitle>{{data.subtitle}}</mat-card-subtitle>
                         </mat-card-header>
                         <div class="background {{data.backGroundImage}}">
-                            <button *ngIf="data.playNow" mat-raised-button color="basic">Play now!</button>
+                            <a href="{{data.href}}">
+                                <button *ngIf="data.playNow" mat-raised-button color="basic">
+                                Play now!
+                                </button>
+                            </a>
                         </div>
                     </mat-card>
                     <mat-accordion>
@@ -22,6 +26,7 @@
                                 </mat-panel-title>
                             </mat-expansion-panel-header>
                             <p>{{data.p}}</p>
+                            <a href="{{data.git}}">Github</a>
                         </mat-expansion-panel>
                     </mat-accordion>
                 </div>

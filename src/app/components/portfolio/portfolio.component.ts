@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderService } from '../template/main-nav/header.service';
-import { InfoComponent } from '../info/info.component'
+import { portfolioArray } from 'src/app/utils/constants';
 
 @Component({
   selector: 'app-portfolio',
@@ -9,8 +9,7 @@ import { InfoComponent } from '../info/info.component'
 })
 
 export class PortfolioComponent implements OnInit {
-  info = new InfoComponent;
-  portfolioData = this.info.portfolioArray;
+  portfolioData = portfolioArray;
 
   panelOpenState = false;
 

@@ -91,7 +91,7 @@
                     align-items: center;
                     width: 100px;
                     height: 57.735px;
-                    background: #66FCF1;
+                    background: #45A29E;
                     position: relative;
                     mat-icon {
                         display: flex;
@@ -109,7 +109,7 @@
                     height: 0;
                     border-left: 50px solid transparent;
                     border-right: 50px solid transparent;
-                    border-bottom: 28.8675px solid #66FCF1;
+                    border-bottom: 28.8675px solid #45A29E;
                 }
                 .hexagon::after {
                     content: "";
@@ -120,7 +120,7 @@
                     height: 0;
                     border-left: 50px solid transparent;
                     border-right: 50px solid transparent;
-                    border-top: 28.8675px solid #66FCF1;
+                    border-top: 28.8675px solid #45A29E;
                 }
             }
         }

@@ -1,17 +1,23 @@
 <div class="container" [class.is-mobile]="mobileQuery.matches">
 
     <mat-toolbar class="toolbar">
+
         <div>
             <button mat-icon-button (click)="snav.toggle()">
                 <mat-icon>menu</mat-icon>
             </button>
         </div>
+
         <div class="section-name-container">
             <h1 class="section-name">{{title}}</h1>
         </div>
-        <div class="logo-container">
-            <img src="../../../../assets/images/logoOwn.png" class="logo">
+
+        <div class="nav-icons-container" *ngIf="!mobileQuery.matches">
+            <a *ngFor="let data of navIconArray" routerLink="{{data.routerLink}}">
+                <mat-icon class="icon" matTooltip="{{data.toolTip}}">{{data.icon}}</mat-icon>
+            </a>
         </div>
+
     </mat-toolbar>
 
     <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 45 : 0">

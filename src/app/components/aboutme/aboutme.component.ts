@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderService } from '../template/main-nav/header.service';
-import { InfoComponent } from '../info/info.component'
+import { labelsArray, skillsArray } from 'src/app/utils/constants';
 
 @Component({
   selector: 'app-aboutme',
@@ -8,10 +8,8 @@ import { InfoComponent } from '../info/info.component'
   styleUrls: ['./aboutMe.component.scss']
 })
 export class AboutmeComponent implements OnInit {
-
-  info = new InfoComponent;
-  labelsArray = this.info.labelsArray;
-  skillsArray = this.info.skillsArray;
+  labelsArray = labelsArray;
+  skillsArray = skillsArray;
 
   constructor(private headerService: HeaderService ) { 
     headerService.headerData = {

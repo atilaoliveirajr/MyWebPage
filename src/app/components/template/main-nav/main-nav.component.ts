@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import {MediaMatcher} from '@angular/cdk/layout';
 import { HeaderService } from './header.service';
-import { InfoComponent } from '../../info/info.component'
+import { navDataArray, navIconArray } from 'src/app/utils/constants';
 
 @Component({
   selector: 'main-nav',
@@ -11,8 +11,8 @@ import { InfoComponent } from '../../info/info.component'
 export class MainNavComponent implements OnInit {
   mobileQuery: MediaQueryList;
 
-  info = new InfoComponent;
-  navDataArray = this.info.navDataArray;
+  navIconArray = navIconArray;
+  navDataArray = navDataArray;
 
   private _mobileQueryListener: () => void;
   
