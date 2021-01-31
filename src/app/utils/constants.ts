@@ -1,23 +1,23 @@
 export const labelsArray = [
     {
+        'icon': 'emoji_people',
+        'title': 'Personal background.',
+        'description': `I was born in Brazil, but right now I live in Germany. Portuguese is my mother language, I also can speak English and I am learning German (I LOVE this language). I am married since 2019 and I have no children.`
+    },
+    {
         'icon': 'engineering',
-        'title': 'My experience so far.',
+        'title': 'Professional background.',
         'description': 'As an engineer in an industrial company, I created better production process, managed new product and cost reduction projects, leading a team of 4 members.',
     },
     {
-        'icon': 'important_devices',
-        'title': 'A technology enthusiast.',
-        'description': 'Being curious has always been a trait of my personality and a requirement for my job, and so I figured out that the most fascinating technologies are only possible due to programming.'
+        'icon': 'follow_the_signs',
+        'title': 'Next steps in my carreer.',
+        'description': 'I decided to get into to the programming field, because I think it is super fun to create new stuffs, I appreciate writing algorithyms and I am passionate about technologies. In the future I want to be a full stack developer.'
     },
     {
-        'icon': 'airplanemode_active',
-        'title': 'Resetting my carrier.',
-        'description': 'Moving to Germany gave me the opportunity to start over my career, so I decided to do something that I really enjoy. A programmer.'
-    },
-    {
-        'icon': 'favorite',
-        'title': 'My dream.',
-        'description': `Overcome the cultural's and languages's obstacle is not easy, but Steve Jobs already gave me an very good advice. "You are already naked, there is no reason not to follow your heart". That is what I will do.`
+        'icon': 'sports_esports',
+        'title': 'Hobbies.',
+        'description': `During my free time I play games in the computer, strategy and RPGs are my favorite, I also work out to keep fit. Whenever it is possible, I enjoy traveling with my wife to learn another language and also take nice photos.`
     }
 ];
 
@@ -45,11 +45,14 @@ export const skillsArray = [
     {
         'name': 'Springboot',
         'level': '50'
-    }
-    ,
+    },
     {
-        'name': 'MySQL',
+        'name': 'DataBank',
         'level': '40'
+    },
+    {
+        'name': 'Scrum',
+        'level': '60'
     }
 ];
 
@@ -60,7 +63,7 @@ export const portfolioArray = [{
     'playNow': true,
     'p': `This game was built with Angular 11 for study purposes only. The following resources were applied: structural directives, dependency injection, components and bidings.`,
     'git': 'https://github.com/atilaoliveirajr/ringoffire',
-    'href': './portfolio/ringoffire',
+    'href': './pjs/ringoffire',
     'angular': true,
     'javaScript': false
 },
@@ -72,7 +75,7 @@ export const portfolioArray = [{
     'p': `This entire site was built with Angular Material.
     Such components as: Sidenav, Button, Tooltip, Card, Expansion Panel, Icon, Tab and Toolbar.`,
     'git': 'https://github.com/atilaoliveirajr/sidenavAngular',
-    'href': '',
+    'href': './',
     'angular': true,
     'javaScript': false
 },
@@ -84,7 +87,7 @@ export const portfolioArray = [{
     'p': `This game was built with Canvas.
     Github: XXXXX`,
     'git': '',
-    'href': './portfolio/elpolloloco',
+    'href': './pjs/elpolloloco',
     'angular': false,
     'javaScript': true
 },
@@ -96,7 +99,7 @@ export const portfolioArray = [{
     'p': `This game was built with JS OOP based.
     Github: XXXXX`,
     'git': '',
-    'href': './portfolio/flappyvogel',
+    'href': './pjs/flappyBird/flappy.html',
     'angular': false,
     'javaScript': true
 }

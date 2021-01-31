@@ -9,8 +9,22 @@ body {
     /* background: #4E4E50; */
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    overflow-y: overlay;
     .bold_blue {
         font-weight: 500;
         color: #66FCF1;
+    }
+}
+
+@media (min-width: 600px) {
+     ::-webkit-scrollbar {
+        width: 10px;
+    }
+     ::-webkit-scrollbar-thumb {
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        border-radius: 6px;
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: 1);
+        }
     }
 }

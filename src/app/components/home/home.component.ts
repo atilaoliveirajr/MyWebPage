@@ -7,7 +7,7 @@ import { HeaderService } from '../template/main-nav/header.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  headlines: Array<string> = ['Web-Frontend Developer.','Programming is like hobby to me!', 'I always give my best!', 'A mission given is a mission accomplished.'];
+  headlines: Array<string> = ['Web-Frontend Developer.','Programming is like a hobby to me!', 'I like to learn new methods to work faster'];
   currentHeadlines: number = 0;
   showHeadline: boolean = true;
 
