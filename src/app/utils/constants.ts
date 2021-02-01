@@ -1,22 +1,22 @@
 export const labelsArray = [
     {
         'icon': 'emoji_people',
-        'title': 'Personal background.',
-        'description': `I was born in Brazil, but right now I live in Germany. Portuguese is my mother language, I also can speak English and I am learning German (I LOVE this language). I am married since 2019 and I have no children.`
+        'title': 'Personal background',
+        'description': `I was born in Brazil, but right now I live in Germany. Portuguese is my mother language, I also can speak English and I am learning German (I LOVE this language!). I am married since 2019 and I have no children.`
     },
     {
         'icon': 'engineering',
-        'title': 'Professional background.',
+        'title': 'Professional background',
         'description': 'As an engineer in an industrial company, I created better production process, managed new product and cost reduction projects, leading a team of 4 members.',
     },
     {
         'icon': 'follow_the_signs',
-        'title': 'Next steps in my carreer.',
+        'title': 'Next steps in my carreer',
         'description': 'I decided to get into to the programming field, because I think it is super fun to create new stuffs, I appreciate writing algorithyms and I am passionate about technologies. In the future I want to be a full stack developer.'
     },
     {
         'icon': 'sports_esports',
-        'title': 'Hobbies.',
+        'title': 'Hobbies',
         'description': `During my free time I play games in the computer, strategy and RPGs are my favorite, I also work out to keep fit. Whenever it is possible, I enjoy traveling with my wife to learn another language and also take nice photos.`
     }
 ];
@@ -44,10 +44,10 @@ export const skillsArray = [
     },
     {
         'name': 'Springboot',
-        'level': '50'
+        'level': '40'
     },
     {
-        'name': 'DataBank',
+        'name': 'Databank',
         'level': '40'
     },
     {
@@ -61,9 +61,10 @@ export const portfolioArray = [{
     'subtitle': 'Best game for your parties!',
     'backGroundImage': 'ringoffire',
     'playNow': true,
-    'p': `This game was built with Angular 11 for study purposes only. The following resources were applied: structural directives, dependency injection, components and bidings.`,
+    'p': `This game was built with Angular 11 for study purposes only. The following resources were applied: structural directives, dependency injection, components and bidings.
+    After start a new game, share the link with a friend for a multiplayer experience.`,
     'git': 'https://github.com/atilaoliveirajr/ringoffire',
-    'href': './pjs/ringoffire',
+    'href': 'https://ring-of-fire-57564.web.app/',
     'angular': true,
     'javaScript': false
 },
@@ -84,9 +85,8 @@ export const portfolioArray = [{
     'subtitle': 'Have 10min fun with this game!',
     'backGroundImage': 'elpolloloco',
     'playNow': true,
-    'p': `This game was built with Canvas.
-    Github: XXXXX`,
-    'git': '',
+    'p': `This game was built with Canvas.`,
+    'git': 'https://github.com/atilaoliveirajr/elPolloLoco',
     'href': './pjs/elpolloloco',
     'angular': false,
     'javaScript': true
@@ -96,8 +96,7 @@ export const portfolioArray = [{
     'subtitle': 'Almost as good as the original!',
     'backGroundImage': 'flappyVogel',
     'playNow': true,
-    'p': `This game was built with JS OOP based.
-    Github: XXXXX`,
+    'p': `This game was built with JS OOP based.`,
     'git': '',
     'href': './pjs/flappyBird/flappy.html',
     'angular': false,
@@ -157,5 +156,14 @@ export const navIconArray = [
         'page': 'Contact me',
         'routerLink': "./imprint",
         'toolTip': "Contact me",
+    }
+];
+
+export const photoPlusQuote = [
+    {
+        'quote': `"As a web developer I want to build applications that will make people's life easier"`,
+    },
+    {
+        'quote': `"I run listening to audiobooks, so that I can keep both mind and body fit."`,
     }
 ];

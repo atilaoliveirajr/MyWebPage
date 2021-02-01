@@ -25,6 +25,9 @@
             width: 300px;
             margin: 20px;
         }
+        .fadeIn {
+            animation: fadeInAnimation 7s infinite;
+        }
     }
     .skills-section {
         box-sizing: border-box;
@@ -125,5 +128,20 @@
                 }
             }
         }
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    92% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

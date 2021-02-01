@@ -1,19 +1,13 @@
 <body>
     <section class="first-section">
 
-        <div class="presentation-wrapper">
-            <img class="photo" src="../../../assets/images/about-me-photo2.png">
-            <p class="presentation-text">
-                "I run listening to audiobooks, so that I can keep both mind and body fit."
+        <div class="presentation-wrapper ">
+            <img class="photo fadeIn" src="../../../assets/images/about-me-photo{{[currentQuote]}}.png">
+            <p class="presentation-text fadeIn">
+                {{photoPlusQuote[currentQuote].quote}}
             </p>
         </div>
 
-        <!-- <div class="presentation-wrapper">
-            <img class="photo" src="../../../assets/images/about-me-photo.png">
-            <p class="presentation-text">
-                "As a web developer I want to build applications that will make people's life easier"
-            </p>
-        </div> -->
 
         <div class="skills-section">
             <div class="skill-bar-container" *ngFor="let skill of skillsArray">

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from '../template/main-nav/header.service';
-import { labelsArray, skillsArray } from 'src/app/utils/constants';
+import { HeaderService } from '../../services/header-service/header.service';
+import { labelsArray, skillsArray, photoPlusQuote } from 'src/app/utils/constants';
 
 @Component({
   selector: 'app-aboutme',
@@ -10,6 +10,9 @@ import { labelsArray, skillsArray } from 'src/app/utils/constants';
 export class AboutmeComponent implements OnInit {
   labelsArray = labelsArray;
   skillsArray = skillsArray;
+  photoPlusQuote = photoPlusQuote;
+
+  currentQuote: number = 0;
 
   constructor(private headerService: HeaderService ) { 
     headerService.headerData = {
@@ -18,6 +21,20 @@ export class AboutmeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.updateMyPresentation();
   }
 
+  ngOnChange() : void {
+    
+  }
+
+  updateMyPresentation() {
+    setInterval(() => {
+      if (this.currentQuote == 0) {
+        this.currentQuote++;
+      } else {
+        this.currentQuote = 0;
+      }
+    }, 7000);
+  }
 }

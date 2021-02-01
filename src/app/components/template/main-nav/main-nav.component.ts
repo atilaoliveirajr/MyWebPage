@@ -1,6 +1,6 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import {MediaMatcher} from '@angular/cdk/layout';
-import { HeaderService } from './header.service';
+import { HeaderService } from '../../../services/header-service/header.service';
 import { navDataArray, navIconArray } from 'src/app/utils/constants';
 
 @Component({
