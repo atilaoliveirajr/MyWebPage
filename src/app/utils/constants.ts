@@ -97,7 +97,7 @@ export const portfolioArray = [{
     'backGroundImage': 'flappyVogel',
     'playNow': true,
     'p': `This game was built with JS OOP based.`,
-    'git': '',
+    'git': 'https://github.com/atilaoliveirajr/flappyVogel',
     'href': './pjs/flappyBird/flappy.html',
     'angular': false,
     'javaScript': true
