@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Download confimation</h2>
+<mat-dialog-content class="mat-typography">
+    <p>You are about to download a pdf documento.</p>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-flat-button mat-dialog-close color="warn">Cancel</button>
+    <button mat-flat-button [mat-dialog-close]="true" cdkFocusInitial>        
+        <a href="../../../../assets/docs/FrontendDevAtilaOliveira.pdf" download="FrontendDevAtilaOliveira.pdf">Agree</a>
+    </button>
+</mat-dialog-actions>

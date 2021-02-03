@@ -23,9 +23,17 @@
     <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 45 : 0">
         <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'push'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="45">
             <mat-nav-list class="navList">
-                <a *ngFor="let data of navDataArray" mat-list-item routerLink="{{data.routerLink}}" class="{{data.class}}" (click)="snav.toggle()">
+                <a *ngFor="let data of navDataArray" mat-list-item routerLink="{{data.routerLink}}" href="{{data.href}}" class="{{data.class}}" (click)="snav.toggle()">
                     <mat-icon class="navIcon">{{data.icon}}</mat-icon>
                     <span>{{data.page}}</span>
+                </a>
+                <!-- <a mat-list-item href="../../../../assets/docs/FrontendDevAtilaOliveira.pdf" class="lastChild" download="FrontendDevAtilaOliveira.pdf" (click)="snav.toggle()">
+                    <mat-icon class="navIcon">picture_as_pdf</mat-icon>
+                    <span>Resume</span>
+                </a> -->
+                <a mat-list-item class="lastChild" (click)="openDialog()">
+                    <mat-icon class="navIcon">picture_as_pdf</mat-icon>
+                    <span>Resume</span>
                 </a>
             </mat-nav-list>
         </mat-sidenav>

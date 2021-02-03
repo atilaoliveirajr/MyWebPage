@@ -109,32 +109,37 @@ export const navDataArray = [
         'icon': 'home',
         'page': 'Home',
         'routerLink': "./",
+        'href':"",
         'class': ""
     },
     {
         'icon': 'web',
         'page': 'Portfolio',
         'routerLink': "./portfolio",
+        'href':"",
         'class': ""
     },
     {
         'icon': 'person_search',
         'page': 'About me',
         'routerLink': "./aboutme",
+        'href':"",
         'class': ""
     },
     {
         'icon': 'person_add',
         'page': 'Contact me',
         'routerLink': "./imprint",
+        'href':"",
         'class': ""
     },
-    {
+    /* {
         'icon': 'picture_as_pdf',
         'page': 'Resume',
-        'routerLink': ".",
+        'routerLink': "",
+        'href':"google.com",
         'class': "lastChild"
-    }
+    } */
 
 ];
 

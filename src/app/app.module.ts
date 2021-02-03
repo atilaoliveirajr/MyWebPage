@@ -16,9 +16,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { FooterComponent } from './components/template/footer/footer.component';
-import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { ImprintComponent } from './components/imprint/imprint.component';
 import { DataProtectionComponent } from './components/data-protection/data-protection.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogDownloadConfimationComponent } from './components/dialog-download-confimation/dialog-download-confimation.component';
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import { DataProtectionComponent } from './components/data-protection/data-prote
     AboutmeComponent,
     FooterComponent,
     ImprintComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    DialogDownloadConfimationComponent
   ],
   imports: [
     BrowserModule,
@@ -44,8 +47,8 @@ import { DataProtectionComponent } from './components/data-protection/data-prote
     MatTabsModule,
     MatCardModule,
     MatExpansionModule,
-    MatTooltipModule
-    
+    MatTooltipModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
